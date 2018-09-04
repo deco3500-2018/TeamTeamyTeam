@@ -1,2 +1,2 @@
 # TeamTeamyTeam
-Link wiki here: https://github.com/deco3500-2018/TeamTeamyTeam/wiki/Proposal
+Proposal document: https://github.com/deco3500-2018/TeamTeamyTeam/wiki/Proposal
