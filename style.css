@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(219, 219, 219);
+  font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Noto Sans', sans-serif;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  font-size: 20px;
+
+}
+
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+
+}
+
+.nav ul {
+  list-style: none;
+  background-color: rgb(181, 183, 183);
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  padding-left: 70px;
+}
+.nav li {
+  font-family: 'Noto', sans-serif;
+  font-weight:400;
+  width: 160px;
+  border-bottom: none;
+  height: 41px;
+  line-height: 40px;
+  font-size: 1.4em;
+  display: inline-block;
+  margin-right: -4px;
+
+
+}
+
+.general a{
+
+  color: rgb(38,98,126);
+  background-color: rgb(112,199,229);
+  border-bottom: 2px solid rgb(38,98,126);
+  border-top: 2px solid rgb(38,98,126);
+  border-left: 2px solid rgb(38,98,126);
+  border-right: 2px solid rgb(38,98,126);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.maths a{
+  color: rgb(64,138,38);
+  background-color: rgb(114,233,120);
+  border-bottom: 2px solid rgb(64,138,38);
+  border-top: 2px solid rgb(64,138,38);
+  border-left: 2px solid rgb(64,138,38);
+  border-right: 2px solid rgb(64,138,38);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+
+}
+
+.english a{
+  color: rgb(160, 47, 219);
+  background-color: rgb(226,101,220);
+  border-bottom: 2px solid rgb(160, 47, 219);
+  border-left: 2px solid rgb(160, 47, 219);
+  border-right: 2px solid rgb(160, 47, 219);
+  border-top: 2px solid rgb(160, 47, 219);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.science a{
+  color: rgb(172, 80, 29);
+  background-color: rgb(231,163,109);
+  border-bottom: 2px solid rgb(172, 80, 29);
+  border-top: 2px solid rgb(172, 80, 29);
+  border-left: 2px solid rgb(172, 80, 29);
+  border-right: 2px solid rgb(172, 80, 29);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.add a{
+  width: 40px;
+}
+
+
+.nav a {
+  text-decoration: none;
+  display: block;
+  transition: .3s color;
+}
+
+.nav a:hover {
+  color: #444;
+}
+
+.nav a.active {
+  color: #444;
+  cursor: default;
+  border-bottom: none;
+  line-height: 43px;
+
+}
+
+
+
+
+
+/* overlay template on twitter feed */
+.template{
+  position: absolute;
+  z-index: 1;
+}
+
+.feed{
+  position: absolute;
+}
