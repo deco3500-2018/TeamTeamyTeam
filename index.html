@@ -6,26 +6,26 @@
 
     <link href="style.css" type="text/css" rel="stylesheet"/>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <script src="scroll.js"></script>
 </head>
 
 
 <body>
-<h1>Teacher's View</h1>
+<img src="img/digilitlogo.png" width="125px" class="logo"></img>
 
-<img src="img/digilitlogo.png" width="300px" class="logo"></img>
-
-<header>
+<div class="header" id="myHeader">
     <div class="nav">
       <ul>
-        <li class="general"><a class="active" href="#">General</a></li>
-        <li class="maths"><a href="#">Maths</a></li>
-        <li class="english"><a href="#">English</a></li>
-        <li class="science"><a href="#">Science</a></li>
+        <li class="general"><a class="active" href="#">GENERAL</a></li>
+        <li class="maths"><a href="#">MATHS</a></li>
+        <li class="english"><a href="#">ENGLISH</a></li>
         <li class="add"><a href="#">+</a></li>
       </ul>
     </div>
-  </header>
+  </div>
+
 
 <div id=”twitter_update_list”>
   <script type=”text/javascript” src=”http://twitter.com/javascripts/blogger.js”>
@@ -35,14 +35,72 @@
 </div>
 
 
-  <div class="parent">
+<!--
+<div class="parent">
+
+
     <div class="template">
       <img  src="img/template.png"></img>
     </div>
     <div class="feed">
-      <a class="twitter-timeline" data-width="640" href="https://twitter.com/team_teamy?ref_src=twsrc%5Etfw">Tweets by team_teamy</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <a id="twitter" class="twitter-timeline" data-width="640" href="https://twitter.com/team_teamy?ref_src=twsrc%5Etfw">Tweets by team_teamy</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <div class="white">
+        <img src="img/cover.png">
+      </div>
     </div>
+
+
 </div>
+
+-->
+<div class="content">
+  <div class="columns" style="width: 3000px;">
+   <div class="column-1" style="float: left; width: 700px;">
+     <h1 class="column-heading">Review</h1>
+     <div class="review-post" id="1">
+       <h3 class="name">Tiffany T.</h3>
+       <p class="post-text">Green is the best, no question!</p>
+     </div>
+     <div class="decline">
+
+     </div>
+     <div class="decline">
+       <p class="cross">X</p>
+     </div>
+     <div class="accept">
+       <div class="tick">
+       <i class="material-icons">
+        check
+      </i>
+      </div>
+     </div>
+
+   </div>
+   <div class="column-2" style="float: left; width: 700px;">
+     <h1 class="column-heading">Live: <i>What's your favourite colour?</i></h1>
+   </div>
+   <div class="column-3" style="float: left; width: 700px;">Right Stuff</div>
+   <br style="clear: left;" />
+</div>
+
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+
 
 </body>
 </html>

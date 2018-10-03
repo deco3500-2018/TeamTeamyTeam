@@ -1,93 +1,68 @@
 body {
   margin: 0;
   padding: 0;
-  background: rgb(219, 219, 219);
-  font-family: 'Noto Sans', sans-serif;
+  background: rgb(235, 235, 235);
+  font-family: helvetica, sans-serif;
 }
 
-h1 {
-  font-family: 'Noto Sans', sans-serif;
-  padding: 10px;
-  background-color: rgb(255, 255, 255);
-  margin: 0;
-  font-size: 20px;
-
-}
 
 .logo{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px;
+  padding: 25px;
+
+}
+
+.nav{
+  background-color: rgb(212, 214, 215);
+  width: 3000px;
+  height: 3.8em;
+
 
 }
 
 .nav ul {
   list-style: none;
-  background-color: rgb(181, 183, 183);
   text-align: center;
-  padding: 0;
+  display: inline;
   margin: 0;
-  padding-left: 70px;
+  height: 30px;
 }
 .nav li {
-  font-family: 'Noto', sans-serif;
-  font-weight:400;
-  width: 160px;
+  font-family: helvetica, sans-serif;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  width: 250px;
   border-bottom: none;
-  height: 41px;
-  line-height: 40px;
-  font-size: 1.4em;
+  line-height: 60px;
+  font-size: 1.3em;
   display: inline-block;
   margin-right: -4px;
-
-
 }
 
 .general a{
-
-  color: rgb(38,98,126);
-  background-color: rgb(112,199,229);
-  border-bottom: 2px solid rgb(38,98,126);
-  border-top: 2px solid rgb(38,98,126);
-  border-left: 2px solid rgb(38,98,126);
-  border-right: 2px solid rgb(38,98,126);
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  color: rgb(86,157,190);
+  background-color: rgb(117,204,246);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  z-index: 0;
 }
 
 .maths a{
-  color: rgb(64,138,38);
-  background-color: rgb(114,233,120);
-  border-bottom: 2px solid rgb(64,138,38);
-  border-top: 2px solid rgb(64,138,38);
-  border-left: 2px solid rgb(64,138,38);
-  border-right: 2px solid rgb(64,138,38);
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  color: rgb(110,154,96);
+  background-color:rgb(147,204,127);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 
 }
 
 .english a{
-  color: rgb(160, 47, 219);
-  background-color: rgb(226,101,220);
-  border-bottom: 2px solid rgb(160, 47, 219);
-  border-left: 2px solid rgb(160, 47, 219);
-  border-right: 2px solid rgb(160, 47, 219);
-  border-top: 2px solid rgb(160, 47, 219);
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-}
+  color: rgb(189, 118, 152);
+  background-color: rgb(236, 155, 194);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 
-.science a{
-  color: rgb(172, 80, 29);
-  background-color: rgb(231,163,109);
-  border-bottom: 2px solid rgb(172, 80, 29);
-  border-top: 2px solid rgb(172, 80, 29);
-  border-left: 2px solid rgb(172, 80, 29);
-  border-right: 2px solid rgb(172, 80, 29);
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
 }
 
 .add a{
@@ -96,33 +71,180 @@ h1 {
 
 
 .nav a {
+  position: relative;
   text-decoration: none;
   display: block;
   transition: .3s color;
+  height: 65px;
+  z-index: 0;
+
 }
 
 .nav a:hover {
-  color: #444;
 }
 
 .nav a.active {
-  color: #444;
+  position: relative;
   cursor: default;
-  border-bottom: none;
-  line-height: 43px;
+  height: 70px;
+  z-index: 5;
+
+}
+
+.content{
+  background-color:rgb(117,204,246);
+  position: relative;
+  padding-top: 10px;
+  width: 3000px;
+  box-shadow: 0px -4px 3px rgba(125, 124, 124, 0.2);
+  z-index: 1;
+}
+
+.columns{
+  height: auto;
+}
+
+.review-post{
+  background-color: rgb(226,226,226);
+  width: 600px;
+  height: 100px;
+  margin: 20px;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 0;
+  box-shadow: 0px 3px 0px rgba(125, 124, 124, 0.2);
+  border-radius: 10px;
+
+
+}
+
+.column-1{
+  background-color: rgb(235,235,235);
+  width: 100%;
+  margin: 10px;
+  padding-bottom: 100px;
+  box-shadow: 0 4px 8px 0 rgba(125, 124, 124, 0.2), 0 6px 20px 0 rgba(125, 124, 124, 0.2);
+  border-radius: 5px;
+
+}
+
+.column-2{
+  background-color: rgb(235,235,235);
+  width: 100%;
+  margin: 10px;
+  padding-bottom: 100px;
+  box-shadow: 0 4px 8px 0 rgba(125, 124, 124, 0.2), 0 6px 20px 0 rgba(125, 124, 124, 0.2);
+  border-radius: 5px;
+}
+
+
+.column-3{
+  background-color: rgb(235,235,235);
+  width: 100%;
+  margin: 10px;
+  margin-left: 400px;
+  padding-bottom: 100px;
+  box-shadow: 0 4px 8px 0 rgba(125, 124, 124, 0.2), 0 6px 20px 0 rgba(125, 124, 124, 0.2);
+  border-radius: 5px;
+}
+.column-heading{
+  text-align: center;
+  font-family: helvetica, sans-serif;
+  font-size: 12pt;
+  font-weight: 400;
+  color: rgb(88, 90, 93);
+  background-color: rgb(226,226,226);
+  padding: 10px;
+  margin: 0;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+}
+
+.name{
+  text-align: left;
+  font-family: helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 12pt;
+  letter-spacing: 0.5px;
+  color: rgb(88, 90, 93);
+  padding: 10px;
+  margin: 0;
+}
+
+
+.post-text{
+  text-align: left;
+  font-family: helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 11pt;
+  letter-spacing: 0.5px;
+  color: rgb(110, 112, 116);
+  padding: 10px;
+  margin: 0;
+}
+
+.decline{
+  margin-left: 575px;
+  margin-top: 0;
+  width: 75px;
+  height: 45px;
+  background-color: rgb(147,204,127);
+  border-radius: 10px;
+
+}
+
+.accept{
+  margin-left: 575px;
+  margin-top: 0;
+  width: 75px;
+  height: 45px;
+  background-color: black;
+  border-radius: 10px;
+
+}
+
+.cross{
+  font-size: 20pt;
+  text-align: center;
+  line-height: 45px;
+  color: red;
+  box-shadow: 0px 3px 0px rgba(110,155,95,1);
+  border-radius: 10px;
+
+.material-icons{
+  font-size: 20pt;
+  text-align: center;
+  line-height: 45px;
+  color: rgb(110,155,95);
+  box-shadow: 0px 3px 0px rgba(110,155,95,1);
+  border-radius: 10px;
+
+
 
 }
 
 
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
 
-
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
 
 /* overlay template on twitter feed */
 .template{
   position: absolute;
-  z-index: 1;
 }
 
 .feed{
   position: absolute;
+}
+
+.white{
+  position: relative;
 }
