@@ -29,11 +29,13 @@ $(document).ready(function()
       $(accept).fadeOut(400, function(){
         $(this).remove();
       });
-
+    });
+    $(".cancel").click(function(){
+      $(".popup, .popup-content").removeClass("active");
     });
 
-
   });
+
 
 
 
