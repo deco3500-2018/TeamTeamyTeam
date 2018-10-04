@@ -68,6 +68,7 @@ body {
 
 .add a{
   width: 40px;
+  color: rgb(88, 90, 93);
 }
 
 
@@ -130,6 +131,7 @@ body {
 }
 
 .column-2{
+  position: relative;
   background-color: rgb(235,235,235);
   margin: 10px;
   padding-bottom: 100px;
@@ -186,6 +188,7 @@ body {
   margin-left: 25px;
   padding: 20px;
   padding-bottom: 0;
+
 }
 
 .decline{
@@ -196,6 +199,7 @@ body {
   box-shadow: 0px 3px 0px rgba(174,56,48,1);
   border-radius: 10px;
   margin-left: 500px;
+  cursor: pointer;
 }
 
 .cross{
@@ -215,6 +219,7 @@ body {
   border-radius: 10px;
   box-shadow: 0px 3px 0px rgba(110,155,95,1);
   top: 50px;
+  cursor: pointer;
 }
 
 .tick{
@@ -226,6 +231,35 @@ body {
 .material-icons.md-48 {
   font-size: 48px;
 }
+
+.material-icons.star {
+  position: absolute;
+  font-size: 38px;
+  color: rgb(89,153,186);
+  margin-top: 2px;
+  margin-left: 33px;
+}
+
+.star-button{
+  float: right;
+  position: absolute;
+  margin-right: 50px;
+  width: 85px;
+  height: 45px;
+  background-color: rgb(117,204,246);
+  border-radius: 5px;
+  box-shadow: 0px 3px 0px rgba(89,153,186,1);
+  cursor: pointer;
+  margin-left: 550px;
+}
+
+.likes{
+margin-top: 12px;
+margin-left: 15px;
+color: rgb(89,153,186);
+font-size: 15pt;
+}
+
 
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
@@ -281,6 +315,8 @@ button{
   height: 40px;
   border-radius: 10px;
   margin: 10px;
+  cursor: pointer;
+
 }
 
 .cancel{

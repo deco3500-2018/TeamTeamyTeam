@@ -19,7 +19,7 @@
 <body>
 <img src="img/digilitlogo.png" width="125px" class="logo"></img>
 
-<div class="header" id="myHeader">
+<div class="header" id="header">
     <div class="nav">
       <ul>
         <li class="general"><a class="active" href="#">GENERAL</a></li>
@@ -121,7 +121,10 @@
 
    <div class="column-2" id="column2" style="float: left; width: 700px;">
      <h1 class="column-heading">Live: <i>What's your favourite colour?</i></h1>
+    
    </div>
+
+
 
    <div class="column-3" id="column3" style="float: left; width: 700px;">
      <h1 class="column-heading">What's your favourite colour?</h1>
@@ -144,21 +147,6 @@
 </div>
 
 
-
-<script>
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
 
 
 
