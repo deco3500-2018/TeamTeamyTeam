@@ -17,14 +17,19 @@
 
 
 <body>
-<img src="img/digilitlogo.png" width="125px" class="logo"></img>
+
+<div class="logos">
+  <img src="img/digilitlogo.png" width="125px" class="logo"></img>
+  <img src="img/digilitlogo.png" width="125px" class="logo2"></img>
+</div>
+
 
 <div class="header" id="header">
     <div class="nav">
       <ul>
         <li class="general"><a class="active" href="#">GENERAL</a></li>
-        <li class="maths"><a href="#">MATHS</a></li>
-        <li class="english"><a href="#">ENGLISH</a></li>
+        <li class="maths"><a href="maths.html">MATHS</a></li>
+        <li class="english"><a href="english.html">ENGLISH</a></li>
         <li class="add"><a href="#">+</a></li>
       </ul>
     </div>
@@ -52,28 +57,39 @@
 
 
 
-<div class="content">
+<div class="general-content">
   <div class="columns" style="width: 3000px;">
    <div class="column-1" id="column1" style="float: left; width: 700px;">
-     <h1 class="column-heading">Review</h1>
+     <div class="column-heading">
+       <div class="review">Review</div>
+       <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
 
-     <div class="post">
-     <img src="img/tiffany.png" class="img-post"></img>
-     <div>
-     <div class="decline" id="decline">
-       <p class="cross">X</p>
      </div>
-     <div class="accept" id="accept">
-       <div class="tick">
-         <i class="material-icons md-48">check</i>
+
+
+     <div id="tiffany" class="invisible">
+
+       <img src="" class="img-post" id="tif-image"></img>
+
+       <div>
+       <div class="decline" id="decline">
+         <p class="cross">X</p>
+       </div>
+
+       <div class="accept" id="accept">
+         <div class="tick">
+           <i class="material-icons md-48">check</i>
+         </div>
        </div>
      </div>
-   </div>
-   </div>
+     </div>
 
-   <div class="post">
+   <div id="bryan" class="invisible">
 
-     <img src="img/bryan.png" class="img-post"></img>
+     <img src="" class="img-post" id="bryan-image"></img>
 
      <div>
      <div class="decline" id="decline">
@@ -121,7 +137,7 @@
 
    <div class="column-2" id="column2" style="float: left; width: 700px;">
      <h1 class="column-heading">Live: <i>What's your favourite colour?</i></h1>
-    
+
    </div>
 
 

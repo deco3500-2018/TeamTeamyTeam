@@ -5,22 +5,27 @@ body {
   font-family: helvetica, sans-serif;
 }
 
+.logos{
+  position: relative;
+}
 
 .logo{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display: inline-block;
+  margin-left: 625px;
   padding: 25px;
+}
 
+.logo2{
+  display: inline-block;
+  position: absolute;
+  padding: 25px;
+  margin-left: 1260px;
 }
 
 .nav{
   background-color: rgb(212, 214, 215);
   width: 3000px;
   height: 60px;
-
-
-
 }
 
 .nav ul {
@@ -30,6 +35,7 @@ body {
   margin: 0;
   height: 30px;
 }
+
 .nav li {
   font-family: helvetica, sans-serif;
   font-weight: lighter;
@@ -47,7 +53,6 @@ body {
   background-color: rgb(117,204,246);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  z-index: 0;
 }
 
 .maths a{
@@ -63,7 +68,6 @@ body {
   background-color: rgb(236, 155, 194);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-
 }
 
 .add a{
@@ -89,10 +93,9 @@ body {
   position: relative;
   cursor: default;
   z-index: 5;
-
 }
 
-.content{
+.general-content{
   background-color:rgb(117,204,246);
   position: relative;
   padding-top: 10px;
@@ -101,6 +104,27 @@ body {
   box-shadow: 0px -4px 3px rgba(125, 124, 124, 0.2);
   z-index: 1;
 }
+
+.maths-content{
+  background-color:rgb(147,204,127);
+  position: relative;
+  padding-top: 10px;
+  width: 3000px;
+  height: 1000px;
+  box-shadow: 0px -4px 3px rgba(125, 124, 124, 0.2);
+  z-index: 1;
+}
+
+.english-content{
+  background-color:rgb(236, 155, 194);
+  position: relative;
+  padding-top: 10px;
+  width: 3000px;
+  height: 1000px;
+  box-shadow: 0px -4px 3px rgba(125, 124, 124, 0.2);
+  z-index: 1;
+}
+
 
 .columns{
   height: auto;
@@ -157,8 +181,18 @@ body {
   background-color: rgb(226,226,226);
   padding: 10px;
   margin: 0;
+  height: 20px;
   border-radius: 5px;
   letter-spacing: 0.5px;
+}
+
+.review{
+  margin-left: 312px;
+  line-height: 18px;
+  padding: 0;
+  position: absolute;
+
+
 }
 
 .name{
@@ -188,7 +222,10 @@ body {
   margin-left: 25px;
   padding: 20px;
   padding-bottom: 0;
+}
 
+.invisible{
+  visibility: hidden;
 }
 
 .decline{
@@ -237,13 +274,13 @@ body {
   font-size: 38px;
   color: rgb(89,153,186);
   margin-top: 2px;
-  margin-left: 33px;
+  margin-left: 36px;
 }
 
 .star-button{
   float: right;
-  position: absolute;
-  margin-right: 50px;
+  position: relative;
+  margin-right: 70px;
   width: 85px;
   height: 45px;
   background-color: rgb(117,204,246);
@@ -251,6 +288,7 @@ body {
   box-shadow: 0px 3px 0px rgba(89,153,186,1);
   cursor: pointer;
   margin-left: 550px;
+  bottom: 40px;
 }
 
 .likes{
@@ -258,6 +296,18 @@ margin-top: 12px;
 margin-left: 15px;
 color: rgb(89,153,186);
 font-size: 15pt;
+}
+
+.cross-delete{
+  cursor: pointer;
+  position: relative;
+  font-weight: 400;
+  font-size: 18pt;
+  display: inline-block;
+  bottom: 90px;
+  right: 60px;
+  color: rgb(88, 90, 93);
+
 }
 
 
@@ -321,4 +371,66 @@ button{
 
 .cancel{
   margin-right: 80px;
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 27px;
+  left: 280px;
+  bottom: 3px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(117,204,246);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 23px;
+  width: 23px;
+  left: 20px;
+  top: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #ccc;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(117,204,246);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(-18px);
+  -ms-transform: translateX(-18px);
+  transform: translateX(-18px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
