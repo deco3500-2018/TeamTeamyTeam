@@ -153,10 +153,14 @@
 <!--Creates the popup content-->
  <div class="popup-content">
     <h2>Delete Post?</h2>
-    <p> This will permanently delete this post, are you sure?</p>
+    <p> Write a comment to let the student know why their post was permanently deleted.</p>
+    <form action="https://formspree.io/kate00@live.com.au" method="POST">
+      <input type="text" name="reason" placeholder="Reason"><br>
    <!--popup's close button-->
    <button class="cancel">Cancel</button>
-    <button class="delete">Delete</button>
+    <button type="submit" class="delete">Delete</button>
+  </form>
+
 </div>
 </div>
 

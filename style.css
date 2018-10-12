@@ -359,6 +359,7 @@ font-size: 15pt;
   padding: 30px;
 }
 
+/* Pop-up for delete post */
 button{
   float: right;
   width: 90px;
@@ -366,13 +367,18 @@ button{
   border-radius: 10px;
   margin: 10px;
   cursor: pointer;
-
 }
 
 .cancel{
-  margin-right: 80px;
+  margin-right: 185px;
 }
 
+input[type="text"] {
+    width: 570px;
+    display: block;
+    font-size: 15pt;
+    margin-bottom: 10px;
+}
 
 /* The switch - the box around the slider */
 .switch {
