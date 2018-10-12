@@ -330,8 +330,8 @@ font-size: 15pt;
 /* popup styling */
 .popup-overlay {
   visibility:hidden;
-  width: 1000px;
-  height:1000px;
+  width: 2000px;
+  height:2000px;
 }
 
 .popup-content {
@@ -342,6 +342,7 @@ font-size: 15pt;
   position: absolute;
   z-index: 10;
   visibility:visible;
+  height: 3000px;
 
 }
 
@@ -369,8 +370,8 @@ button{
   cursor: pointer;
 }
 
-.cancel{
-}
+
+
 
 input[type="text"] {
     width: 570px;
