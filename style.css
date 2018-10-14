@@ -28,6 +28,15 @@ body {
   height: 60px;
 }
 
+#settings{
+  color: rgb(96,103,112);
+  float: right;
+  padding-top: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+
 .nav ul {
   list-style: none;
   text-align: center;
@@ -186,13 +195,34 @@ body {
   letter-spacing: 0.5px;
 }
 
+.column-heading-input{
+  text-align: left;
+  font-family: helvetica, sans-serif;
+  font-size: 12pt;
+  font-weight: 400;
+  color: rgb(88, 90, 93);
+  background-color: rgb(226,226,226);
+  padding: 10px;
+  margin: 0;
+  height: 20px;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+  padding-left: 250px;
+}
+
+input[type="question"] {
+    width: 160px;
+    display: inline-block;
+    font-size: 15pt;
+    margin: 0;
+    padding: 0;
+}
+
 .review{
   margin-left: 312px;
   line-height: 18px;
   padding: 0;
   position: absolute;
-
-
 }
 
 .name{
@@ -325,13 +355,39 @@ font-size: 15pt;
   padding-top: 90px;
 }
 
+/* popup for posting styling */
+
+.popup-content-post {
+  visibility:hidden;
+}
+
+.popup-overlay-post.active{
+  position: absolute;
+  z-index: 30;
+  visibility:visible;
+  height: 3000px;
+}
+
+.popup-content-post.active {
+  position: absolute;
+  z-index: 30;
+  visibility:visible;
+  background-color: rgb(235,235,235);
+  color: rgb(88, 90, 93);
+  box-shadow: 0 4px 8px 0 rgba(125, 124, 124, 0.4), 0 6px 20px 0 rgba(125, 124, 124, 0.4);
+  border: 4px solid rgb(88, 90, 93);
+  border-radius: 10px;
+  margin-left: 1750px;
+  margin-top: 110px;
+  padding: 30px;
+}
 
 
-/* popup styling */
+/* ALL THE POP-UPS */
+
+/* popup for delete styling */
 .popup-overlay {
   visibility:hidden;
-  width: 2000px;
-  height:2000px;
 }
 
 .popup-content {
@@ -343,7 +399,6 @@ font-size: 15pt;
   z-index: 10;
   visibility:visible;
   height: 3000px;
-
 }
 
 .popup-content.active {
@@ -355,12 +410,12 @@ font-size: 15pt;
   box-shadow: 0 4px 8px 0 rgba(125, 124, 124, 0.4), 0 6px 20px 0 rgba(125, 124, 124, 0.4);
   border: 4px solid rgb(88, 90, 93);
   border-radius: 10px;
-  margin-left: 500px;
-  margin-top: 110px;
+  margin-left: 400px;
+  margin-top: 20px;
   padding: 30px;
 }
 
-/* Pop-up for delete post */
+/* Pop-up buttons */
 button{
   float: right;
   width: 90px;
@@ -370,14 +425,47 @@ button{
   cursor: pointer;
 }
 
-
-
-
+/* Reason for delete input */
 input[type="text"] {
     width: 570px;
     display: block;
     font-size: 15pt;
     margin-bottom: 10px;
+}
+
+/* Pop-up for settings */
+.popup-overlay-settings {
+  visibility:hidden;
+}
+
+.popup-content-settings {
+  visibility:hidden;
+
+}
+
+.popup-overlay-settings.active{
+  position: absolute;
+  z-index: 20;
+  visibility:visible;
+  height: 3000px;
+  width: 3000px;
+  background-color: grey;
+}
+
+.popup-content-settings.active {
+  position: fixed;
+  z-index: 20;
+  visibility:visible;
+  background-color: rgb(235,235,235);
+  color: rgb(88, 90, 93);
+  box-shadow: 0 4px 8px 0 rgba(125, 124, 124, 0.4), 0 6px 20px 0 rgba(125, 124, 124, 0.4);
+  border: 4px solid rgb(88, 90, 93);
+  border-radius: 10px;
+  margin-left: 300px;
+  padding: 30px;
+  width: 800px;
+  height: 600px;
+  bottom: 50px;
 }
 
 /* The switch - the box around the slider */

@@ -2,17 +2,34 @@ $(document).ready(function()
 
 {
 
-
+  //press 1 to post tiffany's
   $(document).keypress(function(e) {
     if(e.which == 49) {
-        $("#tif-image").attr("src","img/tiffany.png");
-        $('#tiffany').removeClass("invisible");
+        $(".popup-post, .popup-content-post").addClass("active");
+        $(".confirm").click(function(){
+          $(".popup-post, .popup-content-post").removeClass("active");
+          $("#tif-image").attr("src","img/tiffany.png");
+          $('#tiffany').removeClass("invisible");
 
-
+        });
+        $(".nevermind").click(function(){
+          $(".popup-post, .popup-content-post").removeClass("active");
+        });
     };
+
+    //press 1 to post bryan's
     if(e.which == 50) {
-      $("#bryan-image").attr("src","img/bryan.png");
-      $('#bryan').removeClass("invisible");
+      $(".popup-post, .popup-content-post").addClass("active");
+      $(".confirm").click(function(){
+        $(".popup-post, .popup-content-post").removeClass("active");
+        $("#bryan-image").attr("src","img/bryan.png");
+        $('#bryan').removeClass("invisible");
+
+      });
+      $(".nevermind").click(function(){
+        $(".popup-post, .popup-content-post").removeClass("active");
+      });
+
     };
 });
 
@@ -30,7 +47,6 @@ $(document).ready(function()
       $(".popup, .popup-content").addClass("active");
       $(".delete").click(function(){
         $(".popup, .popup-content").removeClass("active");
-
       });
       $(".cancel").click(function(){
         $(".popup, .popup-content").removeClass("active");
@@ -61,6 +77,18 @@ $(document).ready(function()
     });
     $(".cancel").click(function(){
       $(".popup, .popup-content").removeClass("active");
+    });
+
+  });
+
+  $("#settings").click(function(){
+
+    $(".popup-settings, .popup-content-settings").addClass("active");
+    $(".cancel").click(function(){
+      $(".popup-settings, .popup-content-settings").removeClass("active");
+    });
+    $(".save").click(function(){
+      $(".popup-settings, .popup-content-settings").removeClass("active");
     });
 
   });
