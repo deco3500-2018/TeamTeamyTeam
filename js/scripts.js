@@ -17,7 +17,7 @@ $(document).ready(function()
         });
     };
 
-    //press 1 to post bryan's
+    //press 2 to post bryan's
     if(e.which == 50) {
       $(".popup-post, .popup-content-post").addClass("active");
       $(".confirm").click(function(){
@@ -80,7 +80,19 @@ $(document).ready(function()
     });
 
   });
-
+  
+  $(".submit").click(function(){
+    var question = document.getElementById("question");
+    var text = "";
+    var i;
+    for (i = 0; i < question.length ;i++) {
+        text += question.elements[i].value + "<br>";
+    }
+    document.getElementById("question").innerHTML = text;
+}
+  
+  
+  
   $("#settings").click(function(){
 
     $(".popup-settings, .popup-content-settings").addClass("active");
