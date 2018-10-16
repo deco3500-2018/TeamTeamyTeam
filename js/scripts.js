@@ -46,6 +46,7 @@ $(document).ready(function()
     $(image).appendTo('#column2, #column3').after(function(){
       return "<div class='cross-delete'>x</div><div class='star-button' id='counter'><div class='star'><div class='material-icons star'>star</div></div><div class='likes'>0</div></div>";
     });
+    $( "#column3" ).find('.cross-delete').replaceWith('');
     $(this).prev(".decline").remove();
     $(this).remove();
     $( ".star-button" ).click(function() {
