@@ -354,6 +354,7 @@ font-size: 15pt;
 .sticky + .content {
   padding-top: 90px;
 }
+/* ALL THE POP-UPS */
 
 /* popup for posting styling */
 
@@ -383,7 +384,6 @@ font-size: 15pt;
 }
 
 
-/* ALL THE POP-UPS */
 
 /* popup for delete styling */
 .popup-overlay {

@@ -80,7 +80,7 @@ $(document).ready(function()
     });
 
   });
-  
+
   $(".submit").click(function(){
     var question = document.getElementById("question");
     var text = "";
@@ -89,10 +89,10 @@ $(document).ready(function()
         text += question.elements[i].value + "<br>";
     }
     document.getElementById("question").innerHTML = text;
-}
-  
-  
-  
+});
+
+
+
   $("#settings").click(function(){
 
     $(".popup-settings, .popup-content-settings").addClass("active");
