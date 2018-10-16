@@ -8,8 +8,12 @@ $(document).ready(function()
         $(".popup-post, .popup-content-post").addClass("active");
         $(".confirm").click(function(){
           $(".popup-post, .popup-content-post").removeClass("active");
+          $(".popup-confirmation, .popup-content-confirmation").addClass("active");
           $("#tif-image").attr("src","img/tiffany.png");
           $('#tiffany').removeClass("invisible");
+          $(".ok").click(function(){
+            $(".popup-confirmation, .popup-content-confirmation").removeClass("active");
+          });
 
         });
         $(".nevermind").click(function(){
@@ -22,8 +26,12 @@ $(document).ready(function()
       $(".popup-post, .popup-content-post").addClass("active");
       $(".confirm").click(function(){
         $(".popup-post, .popup-content-post").removeClass("active");
+        $(".popup-confirmation, .popup-content-confirmation").addClass("active");
         $("#bryan-image").attr("src","img/bryan.png");
         $('#bryan').removeClass("invisible");
+        $(".ok").click(function(){
+          $(".popup-confirmation, .popup-content-confirmation").removeClass("active");
+        });
 
       });
       $(".nevermind").click(function(){
