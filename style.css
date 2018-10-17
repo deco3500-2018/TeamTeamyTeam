@@ -158,7 +158,7 @@ body {
   float: left;
   height: 1000px;
   background-color: rgb(235,235,235);
-  margin: 10px;
+  margin: 5px;
   box-shadow: 0 4px 8px 0 rgba(125, 124, 124, 0.2), 0 6px 20px 0 rgba(125, 124, 124, 0.2);
   border-radius: 5px;
   min-height: 900px;
@@ -167,7 +167,7 @@ body {
 .column-2{
   position: relative;
   background-color: rgb(235,235,235);
-  margin: 10px;
+  margin: 5px;
   padding-bottom: 100px;
   box-shadow: 0 4px 8px 0 rgba(125, 124, 124, 0.2), 0 6px 20px 0 rgba(125, 124, 124, 0.2);
   border-radius: 5px;
@@ -177,7 +177,7 @@ body {
 
 .column-3{
   background-color: rgb(235,235,235);
-  margin: 10px;
+  margin: 5px;
   margin-left: 180px;
   padding-bottom: 100px;
   box-shadow: 0 4px 8px 0 rgba(125, 124, 124, 0.2), 0 6px 20px 0 rgba(125, 124, 124, 0.2);
@@ -223,7 +223,7 @@ input[type="question"] {
 }
 
 .review{
-  margin-left: 312px;
+  margin-left: 260px;
   line-height: 18px;
   padding: 0;
   position: absolute;
@@ -253,8 +253,8 @@ input[type="question"] {
 }
 
 .img-post{
-  margin-left: 25px;
-  padding: 20px;
+  margin-left: 10px;
+  padding: 10px;
   padding-bottom: 0;
 }
 
@@ -269,7 +269,7 @@ input[type="question"] {
   background-color: rgb(219, 84, 81);
   box-shadow: 0px 3px 0px rgba(174,56,48,1);
   border-radius: 10px;
-  margin-left: 500px;
+  margin-left: 480px;
   cursor: pointer;
 }
 
@@ -282,7 +282,7 @@ input[type="question"] {
 
 .accept{
   float: right;
-  margin-right: 50px;
+  margin-right: 25px;
   display: inline-block;
   width: 70px;
   height: 45px;
@@ -504,7 +504,7 @@ input[type="text"] {
   display: inline-block;
   width: 45px;
   height: 27px;
-  left: 280px;
+  left: 260px;
   bottom: 3px;
 }
 
