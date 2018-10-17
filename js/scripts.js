@@ -2,6 +2,7 @@ $(document).ready(function()
 
 {
 
+// Reviewing posts turn on
   //press 1 to post tiffany's
   $(document).keypress(function(e) {
     if(e.which == 49) {
@@ -89,6 +90,18 @@ $(document).ready(function()
     });
 
   });
+
+  // Reviewing posts turn off
+    //press 1 to post tiffany's
+    $('.slider').click(function(){
+      $('#tiff-image').appendTo('#column2, #column3').after(function(){
+        return "<div class='cross-delete'>x</div><div class='star-button' id='counter'><div class='star'><div class='material-icons star'>star</div></div><div class='likes'>0</div></div>";
+      });
+      $( "#column3" ).find('.cross-delete').replaceWith('');
+    });
+
+
+
 
   $(".submit").click(function(){
     var question = document.getElementById("question");

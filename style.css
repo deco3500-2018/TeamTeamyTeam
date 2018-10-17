@@ -19,7 +19,7 @@ body {
   display: inline-block;
   position: absolute;
   padding: 25px;
-  margin-left: 1260px;
+  margin-left: 1060px;
 }
 
 .nav{
@@ -177,7 +177,7 @@ body {
 .column-3{
   background-color: rgb(235,235,235);
   margin: 10px;
-  margin-left: 350px;
+  margin-left: 180px;
   padding-bottom: 100px;
   box-shadow: 0 4px 8px 0 rgba(125, 124, 124, 0.2), 0 6px 20px 0 rgba(125, 124, 124, 0.2);
   border-radius: 5px;
