@@ -102,7 +102,7 @@ body {
 .nav a.active {
   position: relative;
   cursor: default;
-  z-index: 5;
+  z-index: 2;
 }
 
 .general-content{
@@ -300,6 +300,9 @@ input[type="question"] {
   color: rgb(110,155,95);
 }
 
+.material-icons{
+  cursor: pointer;
+}
 .material-icons.md-48 {
   font-size: 48px;
 }
@@ -352,7 +355,7 @@ font-size: 15pt;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 80;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
@@ -396,14 +399,14 @@ font-size: 15pt;
 
 .popup-overlay-confirmation.active{
   position: absolute;
-  z-index: 100;
+  z-index: 90;
   visibility:visible;
   height: 3000px;
 }
 
 .popup-content-confirmation.active {
   position: absolute;
-  z-index: 100;
+  z-index: 90;
   visibility:visible;
   background-color: rgb(210, 249, 196);
   color: rgb(88, 90, 93);
@@ -477,7 +480,7 @@ input[type="text"] {
 
 .popup-overlay-settings.active{
   position: absolute;
-  z-index: 20;
+  z-index: 91;
   visibility:visible;
   height: 3000px;
   width: 3000px;
@@ -486,18 +489,23 @@ input[type="text"] {
 
 .popup-content-settings.active {
   position: fixed;
-  z-index: 20;
+  z-index: 91;
   visibility:visible;
   background-color: rgb(235,235,235);
   color: rgb(88, 90, 93);
   box-shadow: 0 4px 8px 0 rgba(125, 124, 124, 0.4), 0 6px 20px 0 rgba(125, 124, 124, 0.4);
   border: 4px solid rgb(88, 90, 93);
   border-radius: 10px;
-  margin-left: 300px;
+  margin-left: 400px;
   padding: 30px;
-  width: 800px;
-  height: 600px;
-  bottom: 50px;
+  width: 600px;
+  height: 400px;
+  bottom: 105px;
+  overflow-y: scroll;
+}
+
+.settings-table td{
+  text-align: center;
 }
 
 /* The switch - the box around the slider */

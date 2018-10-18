@@ -1,150 +1,252 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+      <title>DigiLit</title>
+      <link href="style.css" type="text/css" rel="stylesheet"/>
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="js/scripts.js"></script>
+  </head>
 
-    <title>DigiLit</title>
+  <body>
 
-    <link href="style.css" type="text/css" rel="stylesheet"/>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
-
-
-
-
-</head>
-
-
-<body>
-<img src="img/digilitlogo.png" width="125px" class="logo"></img>
-
-<div class="header" id="header">
-    <div class="nav">
-      <ul>
-        <li class="general"><a href="index.html">GENERAL</a></li>
-        <li class="maths"><a class="active" href="maths.html">MATHS</a></li>
-        <li class="english"><a href="english.html">ENGLISH</a></li>
-        <li class="add"><a href="#">+</a></li>
-      </ul>
-    </div>
+  <div class="logos">
+    <img src="img/digilitlogo.png" width="125px" class="logo"></img>
+    <i class="material-icons md-48" id="settings">settings</i>
+    <img src="img/digilitlogo.png" width="125px" class="logo2"></img>
   </div>
 
 
-<div class="maths-content">
-  <div class="columns" style="width: 3000px;">
-   <div class="column-1" id="column1" style="float: left; width: 700px;">
-     <div class="column-heading">
-       <div class="review">Review</div>
-       <label class="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
-      </label>
-     </div>
+  <div class="header" id="header">
+      <div class="nav">
+        <ul>
+          <li class="general"><a href="index.html">GENERAL</a></li>
+          <li class="maths"><a class="active" href="maths.html">MATHS</a></li>
+          <li class="english"><a href="english.html">ENGLISH</a></li>
+          <li class="add"><a href="#">+</a></li>
+        </ul>
+      </div>
+    </div>
 
 
+  <div class="maths-content">
+    <div class="columns" style="width: 2500px;">
+     <div class="column-1" id="column1" style="float: left; width: 650px;">
+       <div class="column-heading">
+         <div class="review">Review</div>
+         <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+       </div>
 
 
+       <div id="tiffany" class="invisible">
 
-<!-- original text post
-        <div class="review">
-         <div class="review-post">
-           <h3 class="name">Tiffany T.</h3>
-           <p class="post-text">Green is the best, no question!</p>
-           <div class="decline" id="decline">
-             <p class="cross">X</p>
-           </div>
-           <div class="accept" id="accept">
-             <div class="tick">
-               <i class="material-icons md-48">check</i>
-             </div>
+         <img src="" class="img-post" id="tif-image"></img>
+
+         <div>
+         <div class="decline" id="decline">
+           <p class="cross">X</p>
+         </div>
+
+         <div class="accept" id="accept">
+           <div class="tick">
+             <i class="material-icons md-48">check</i>
            </div>
          </div>
        </div>
--->
+       </div>
 
-<!-- Pop-ups -->
+     <div id="bryan" class="invisible">
 
-<!--Creates the popup body-->
+       <img src="" class="img-post" id="bryan-image"></img>
 
+       <div>
+       <div class="decline" id="decline">
+         <p class="cross">X</p>
+       </div>
+
+       <div class="accept" id="accept">
+         <div class="tick">
+           <i class="material-icons md-48">check</i>
+         </div>
+       </div>
+     </div>
      </div>
 
 
+  <!-- original text post
+          <div class="review">
+           <div class="review-post">
+             <h3 class="name">Tiffany T.</h3>
+             <p class="post-text">Green is the best, no question!</p>
+             <div class="decline" id="decline">
+               <p class="cross">X</p>
+             </div>
+             <div class="accept" id="accept">
+               <div class="tick">
+                 <i class="material-icons md-48">check</i>
+               </div>
+             </div>
+           </div>
+         </div>
+  -->
+
+  <!-- Pop-ups -->
+
+  <!--Creates the popup body-->
+
+    </div>
+
+    <div class="column-2" id="column2" style="float: left; width: 650px;">
+         <h1 class="column-heading">Live: <i>What's your favourite colour?</i></h1>
+       </div>
 
 
+       <div class="column-3" id="column3" style="float: left; width: 650px;">
+         <h1 class="column-heading">What's your favourite colour?</h1>
+       </div>
+
+       <br style="clear: left;" />
+    </div>
 
 
+  <!-- ALL THE POP-UPS -->
+
+  <!-- Posting -->
+    <div class="popup-overlay-post">
+     <div class="popup-content-post">
+        <h2>Submit Post?</h2>
+        <p> You are about to submit your post to the public board. Are you sure you want eveyone to see this post?</p>
+      <button class="confirm">Yes, post</button>
+      <button class="nevermind">Nevermind</button>
+    </div>
+    </div>
+    <!-- Posting -->
+    <div class="popup-overlay-confirmation">
+     <div class="popup-content-confirmation">
+        <h2>Post Submitted</h2>
+        <p> Your post has been submitted to your teacher for review.</p>
+      <button class="ok">Ok</button>
+    </div>
+    </div>
 
 
-   <div class="column-2" id="column2" style="float: left; width: 700px;">
-     <h1 class="column-heading-input">Question: <input type="question" name="question"><br>
-</h1>
+  <!-- Deleting -->
+    <div class="popup-overlay">
+    <!--Creates the popup content-->
+      <div class="popup-content">
+        <h2>Delete Post?</h2>
+        <p> Write a comment to let the student know why their post was permanently deleted.</p>
+        <form action="https://formspree.io/kate00@live.com.au" method="POST" target="_blank">
+          <input type="text" name="Reason" placeholder="Reason"><br>
+       <!--popup's close button-->
+          <button type="submit" class="delete">Delete</button>
+        </form>
+        <button class="cancel">Cancel</button>
+      </div>
+    </div>
 
-   </div>
+    <!-- Settings -->
+      <div class="popup-overlay-settings">
+      <!--Creates the popup content-->
+        <div class="popup-content-settings">
+          <h2>Settings</h2>
+          <table class="settings-table" style="width:100%">
+            <tr>
+              <td>Adam P.</td>
+              <td><img src="img/code.png" width="80px"></img></td>
+              <td><i class="material-icons">edit</i><i class="material-icons">outlined_flag</i><i class="material-icons">delete</i></td>
+            </tr>
+            <tr>
+              <td>Bryan D.</td>
+              <td><img src="img/code.png" width="80px"></img></td>
+              <td><i class="material-icons">edit</i><i class="material-icons">outlined_flag</i><i class="material-icons">delete</i></td>
+            </tr>
+            <tr>
+              <td>Harry R.</td>
+              <td><img src="img/code.png" width="80px"></img></td>
+              <td><i class="material-icons">edit</i><i class="material-icons">outlined_flag</i><i class="material-icons">delete</i></td>
+            </tr>
+            <tr>
+              <td>Jenny C.</td>
+              <td><img src="img/code.png" width="80px"></img></td>
+              <td><i class="material-icons">edit</i><i class="material-icons">outlined_flag</i><i class="material-icons">delete</i></td>
+            </tr>
+            <tr>
+              <td>Lucy F.</td>
+              <td><img src="img/code.png" width="80px"></img></td>
+              <td><i class="material-icons">edit</i><i class="material-icons">outlined_flag</i><i class="material-icons">delete</i></td>
+            </tr>
+            <tr>
+              <td>Michael P.</td>
+              <td><img src="img/code.png" width="80px"></img></td>
+              <td><i class="material-icons">edit</i><i class="material-icons">outlined_flag</i><i class="material-icons">delete</i></td>
+            </tr>
+            <tr>
+              <td>Mick S.</td>
+              <td><img src="img/code.png" width="80px"></img></td>
+              <td><i class="material-icons">edit</i><i class="material-icons">outlined_flag</i><i class="material-icons">delete</i></td>
+            </tr>
+            <tr>
+              <td>Oliver T.</td>
+              <td><img src="img/code.png" width="80px"></img></td>
+              <td><i class="material-icons">edit</i><i class="material-icons">outlined_flag</i><i class="material-icons">delete</i></td>
+            </tr>
+            <tr>
+              <td>Polly L.</td>
+              <td><img src="img/code.png" width="80px"></img></td>
+              <td><i class="material-icons">edit</i><i class="material-icons">outlined_flag</i><i class="material-icons">delete</i></td>
+            </tr>
+            <tr>
+              <td>Rosie M.</td>
+              <td><img src="img/code.png" width="80px"></img></td>
+              <td><i class="material-icons">edit</i><i class="material-icons">outlined_flag</i><i class="material-icons">delete</i></td>
+            </tr>
+            <tr>
+              <td>Sarah L.</td>
+              <td><img src="img/code.png" width="80px"></img></td>
+              <td><i class="material-icons">edit</i><i class="material-icons">outlined_flag</i><i class="material-icons">delete</i></td>
+            </tr>
+            <tr>
+              <td>Tiffany T.</td>
+              <td><img src="img/code.png" width="80px"></img></td>
+              <td><i class="material-icons">edit</i><i class="material-icons">outlined_flag</i><i class="material-icons">delete</i></td>
+            </tr>
+            <tr>
+              <td>Vicky G.</td>
+              <td><img src="img/code.png" width="80px"></img></td>
+              <td><i class="material-icons">edit</i><i class="material-icons">outlined_flag</i><i class="material-icons">delete</i></td>
+            </tr>
+          </table>
+        <button class="save">Save</button>
+        <button class="cancel">Cancel</button>
 
+      </div>
+    </div>
+  </div>
+  </body>
 
+  <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
 
-   <div class="column-3" id="column3" style="float: left; width: 700px;">
-     <h1 class="column-heading">What's your favourite colour?</h1>
-   </div>
+    // Get the header
+    var header = document.getElementById("header");
 
-   <br style="clear: left;" />
-</div>
+    // Get the offset position of the navbar
+    var sticky = header.offsetTop;
 
-<!-- ALL THE POP-UPS -->
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
 
-<!-- Posting -->
-<div class="popup-overlay-post">
- <div class="popup-content-post">
-    <h2>Submit Post?</h2>
-    <p> You are about to submit your post to the public board. Are you sure you want eveyone to see this post?</p>
-  <button class="confirm">Yes, post</button>
-  <button class="nevermind">Nevermind</button>
-</div>
-</div>
-<!-- Posting -->
-<div class="popup-overlay-confirmation">
- <div class="popup-content-confirmation">
-    <h2>Post Submitted</h2>
-    <p> Your post has been submitted to your teacher for review.</p>
-  <button class="ok">Ok</button>
-</div>
-</div>
-
-
-<!-- Deleting -->
-<div class="popup-overlay">
-<!--Creates the popup content-->
- <div class="popup-content">
-    <h2>Delete Post?</h2>
-    <p> Write a comment to let the student know why their post was permanently deleted.</p>
-    <form action="https://formspree.io/kate00@live.com.au" method="POST" target="_blank">
-      <input type="text" name="Reason" placeholder="Reason"><br>
-   <!--popup's close button-->
-    <button type="submit" class="delete">Delete</button>
-  </form>
-  <button class="cancel">Cancel</button>
-</div>
-</div>
-
-<!-- Settings -->
-<div class="popup-overlay-settings">
-<!--Creates the popup content-->
- <div class="popup-content-settings">
-    <h2>Settings</h2>
-    <p> Information here </p>
-    <button class="save">Save</button>
-    <button class="cancel">Cancel</button>
-
-</div>
-</div>
-
-
-</div>
-
-
-
-
-
-</body>
+  </script>
 </html>
