@@ -20,6 +20,28 @@ $(document).ready(function()
           $(".popup-post, .popup-content-post").removeClass("active");
         });
     };
+    // accept tiffany's post
+      $( "#accept-tiffany" ).click(function() {
+        var image =   $(this).parent().prev(".img-post");
+        $(image).appendTo('#column2, #column3').after(function(){
+          return "<div class='cross-delete'>x</div><div class='star-button-tiffany' id='counter'><div class='star'><div class='material-icons star'>star</div></div><div class='tiffany-likes' id='likes'>0</div></div>";
+        });
+        $( "#column3" ).find('.cross-delete').replaceWith('');
+        $(this).prev(".decline").remove();
+        $(this).remove();
+        $( ".star-button-tiffany" ).click(function() {
+          $('.tiffany-likes').html(function(y, tif) { return tif*1+1 });
+        });
+        $( ".cross-delete" ).click(function(){
+          $(".popup, .popup-content").addClass("active");
+          $(".delete").click(function(){
+            $(".popup, .popup-content").removeClass("active");
+          });
+          $(".cancel").click(function(){
+            $(".popup, .popup-content").removeClass("active");
+          });
+        });
+      });
 
     //press 2 to post bryan's
     if(e.which == 50) {
@@ -36,8 +58,30 @@ $(document).ready(function()
       $(".nevermind").click(function(){
         $(".popup-post, .popup-content-post").removeClass("active");
       });
-
     };
+
+    // accept bryans post
+      $( "#accept-bryan" ).click(function() {
+        var image =   $(this).parent().prev(".img-post");
+        $(image).appendTo('#column2, #column3').after(function(){
+          return "<div class='cross-delete'>x</div><div class='star-button-bryan' id='counter'><div class='star'><div class='material-icons star'>star</div></div><div class='bryan-likes' id='likes'>0</div></div>";
+        });
+        $( "#column3" ).find('.cross-delete').replaceWith('');
+        $(this).prev(".decline").remove();
+        $(this).remove();
+        $( ".star-button-bryan" ).click(function() {
+          $('.bryan-likes').html(function(a, bry) { return bry*1+1 });
+        });
+        $( ".cross-delete" ).click(function(){
+          $(".popup, .popup-content").addClass("active");
+          $(".delete").click(function(){
+            $(".popup, .popup-content").removeClass("active");
+          });
+          $(".cancel").click(function(){
+            $(".popup, .popup-content").removeClass("active");
+          });
+        });
+      });
     //press 3 to post lucy's
     if(e.which == 51) {
       $(".popup-post, .popup-content-post").addClass("active");
@@ -53,8 +97,29 @@ $(document).ready(function()
       $(".nevermind").click(function(){
         $(".popup-post, .popup-content-post").removeClass("active");
       });
-
     };
+    // accept lucy's post
+      $( "#accept-lucy" ).click(function() {
+        var image =   $(this).parent().prev(".img-post");
+        $(image).appendTo('#column2, #column3').after(function(){
+          return "<div class='cross-delete'>x</div><div class='star-button-lucy' id='counter'><div class='star'><div class='material-icons star'>star</div></div><div class='lucy-likes' id='likes'>0</div></div>";
+        });
+        $( "#column3" ).find('.cross-delete').replaceWith('');
+        $(this).prev(".decline").remove();
+        $(this).remove();
+        $( ".star-button-lucy" ).click(function() {
+          $('.lucy-likes').html(function(i, val) { return val*1+1 });
+        });
+        $( ".cross-delete" ).click(function(){
+          $(".popup, .popup-content").addClass("active");
+          $(".delete").click(function(){
+            $(".popup, .popup-content").removeClass("active");
+          });
+          $(".cancel").click(function(){
+            $(".popup, .popup-content").removeClass("active");
+          });
+        });
+      });
 
     //press 4 to post oliver's
     if(e.which == 52) {
@@ -71,8 +136,29 @@ $(document).ready(function()
       $(".nevermind").click(function(){
         $(".popup-post, .popup-content-post").removeClass("active");
       });
-
     };
+    // accept olivers post
+      $( "#accept-oliver" ).click(function() {
+        var image =   $(this).parent().prev(".img-post");
+        $(image).appendTo('#column2, #column3').after(function(){
+          return "<div class='cross-delete'>x</div><div class='star-button-oliver' id='counter'><div class='star'><div class='material-icons star'>star</div></div><div class='oliver-likes' id='likes'>0</div></div>";
+        });
+        $( "#column3" ).find('.cross-delete').replaceWith('');
+        $(this).prev(".decline").remove();
+        $(this).remove();
+        $( ".star-button-oliver" ).click(function() {
+          $('.oliver-likes').html(function(x, num) { return num*1+1 });
+        });
+        $( ".cross-delete" ).click(function(){
+          $(".popup, .popup-content").addClass("active");
+          $(".delete").click(function(){
+            $(".popup, .popup-content").removeClass("active");
+          });
+          $(".cancel").click(function(){
+            $(".popup, .popup-content").removeClass("active");
+          });
+        });
+      });
 
     //press 5 to post polly's
     if(e.which == 53) {
@@ -85,46 +171,42 @@ $(document).ready(function()
         $(".ok").click(function(){
           $(".popup-confirmation, .popup-content-confirmation").removeClass("active");
         });
-
       });
       $(".nevermind").click(function(){
         $(".popup-post, .popup-content-post").removeClass("active");
       });
-
     };
+    // accept pollys post
+      $( "#accept-polly" ).click(function() {
+        var image =   $(this).parent().prev(".img-post");
+        $(image).appendTo('#column2, #column3').after(function(){
+          return "<div class='cross-delete'>x</div><div class='star-button-polly' id='counter'><div class='star'><div class='material-icons star'>star</div></div><div class='polly-likes' id='likes'>0</div></div>";
+        });
+        $( "#column3" ).find('.cross-delete').replaceWith('');
+        $(this).prev(".decline").remove();
+        $(this).remove();
+        $( ".star-button-polly" ).click(function() {
+          $('.polly-likes').html(function(p, pol) { return pol*1+1 });
+        });
+        $( ".cross-delete" ).click(function(){
+          $(".popup, .popup-content").addClass("active");
+          $(".delete").click(function(){
+            $(".popup, .popup-content").removeClass("active");
+          });
+          $(".cancel").click(function(){
+            $(".popup, .popup-content").removeClass("active");
+          });
+        });
+      });
 });
 
-  $( ".accept" ).click(function() {
-    var image =   $(this).parent().prev(".img-post");
-    $(image).appendTo('#column2, #column3').after(function(){
-      return "<div class='cross-delete'>x</div><div class='star-button' id='counter'><div class='star'><div class='material-icons star'>star</div></div><div class='likes'>0</div></div>";
-    });
-    $( "#column3" ).find('.cross-delete').replaceWith('');
-    $(this).prev(".decline").remove();
-    $(this).remove();
-    $( ".star-button" ).click(function() {
-      $('.likes').html(function(i, val) { return val*1+1 });
-    });
-    $( ".cross-delete" ).click(function(){
-      $(".popup, .popup-content").addClass("active");
-      $(".delete").click(function(){
-        $(".popup, .popup-content").removeClass("active");
-      });
-      $(".cancel").click(function(){
-        $(".popup, .popup-content").removeClass("active");
-      });
-    });
-  });
 
 
   $( ".decline" ).click(function() {
     var image = $(this).parent().prev(".img-post");
-    var accept = $(this).next(".accept");
+    var accept = $(this).next("#accept");
     var decline = $(this);
-
-
     $(".popup, .popup-content").addClass("active");
-
     $(".delete").click(function(){
       $(".popup, .popup-content").removeClass("active");
       $(image).fadeOut(400, function(){
@@ -143,14 +225,6 @@ $(document).ready(function()
 
   });
 
-  // Reviewing posts turn off
-    //press 1 to post tiffany's
-    $('.slider').click(function(){
-      $('#tiff-image').appendTo('#column2, #column3').after(function(){
-        return "<div class='cross-delete'>x</div><div class='star-button' id='counter'><div class='star'><div class='material-icons star'>star</div></div><div class='likes'>0</div></div>";
-      });
-      $( "#column3" ).find('.cross-delete').replaceWith('');
-    });
 
 
 

@@ -37,6 +37,16 @@ body {
   cursor: pointer;
 }
 
+.posted{
+  list-style: none;
+  padding: 0;
+  padding-left: 0px;
+}
+
+.posted li{
+  list-style: none;
+  padding: 0;
+}
 
 .nav ul {
   list-style: none;
@@ -319,7 +329,7 @@ input[type="question"] {
   margin-left: 36px;
 }
 
-.star-button{
+#counter{
   float: right;
   position: relative;
   margin-right: 70px;
@@ -333,11 +343,13 @@ input[type="question"] {
   bottom: 40px;
 }
 
-.likes{
-margin-top: 12px;
-margin-left: 15px;
-color: rgb(89,153,186);
-font-size: 15pt;
+
+
+#likes{
+  margin-top: 12px;
+  margin-left: 15px;
+  color: rgb(89,153,186);
+  font-size: 15pt;
 }
 
 .cross-delete{
