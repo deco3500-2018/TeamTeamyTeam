@@ -15,7 +15,6 @@ $(document).ready(function()
           $(".ok").click(function(){
             $(".popup-confirmation, .popup-content-confirmation").removeClass("active");
           });
-
         });
         $(".nevermind").click(function(){
           $(".popup-post, .popup-content-post").removeClass("active");
@@ -30,6 +29,59 @@ $(document).ready(function()
         $(".popup-confirmation, .popup-content-confirmation").addClass("active");
         $("#bryan-image").attr("src","img/bryan.png");
         $('#bryan').removeClass("invisible");
+        $(".ok").click(function(){
+          $(".popup-confirmation, .popup-content-confirmation").removeClass("active");
+        });
+      });
+      $(".nevermind").click(function(){
+        $(".popup-post, .popup-content-post").removeClass("active");
+      });
+
+    };
+    //press 3 to post lucy's
+    if(e.which == 51) {
+      $(".popup-post, .popup-content-post").addClass("active");
+      $(".confirm").click(function(){
+        $(".popup-post, .popup-content-post").removeClass("active");
+        $(".popup-confirmation, .popup-content-confirmation").addClass("active");
+        $("#lucy-image").attr("src","img/lucy.png");
+        $('#lucy').removeClass("invisible");
+        $(".ok").click(function(){
+          $(".popup-confirmation, .popup-content-confirmation").removeClass("active");
+        });
+      });
+      $(".nevermind").click(function(){
+        $(".popup-post, .popup-content-post").removeClass("active");
+      });
+
+    };
+
+    //press 4 to post oliver's
+    if(e.which == 52) {
+      $(".popup-post, .popup-content-post").addClass("active");
+      $(".confirm").click(function(){
+        $(".popup-post, .popup-content-post").removeClass("active");
+        $(".popup-confirmation, .popup-content-confirmation").addClass("active");
+        $("#oliver-image").attr("src","img/oliver.png");
+        $('#oliver').removeClass("invisible");
+        $(".ok").click(function(){
+          $(".popup-confirmation, .popup-content-confirmation").removeClass("active");
+        });
+      });
+      $(".nevermind").click(function(){
+        $(".popup-post, .popup-content-post").removeClass("active");
+      });
+
+    };
+
+    //press 5 to post polly's
+    if(e.which == 53) {
+      $(".popup-post, .popup-content-post").addClass("active");
+      $(".confirm").click(function(){
+        $(".popup-post, .popup-content-post").removeClass("active");
+        $(".popup-confirmation, .popup-content-confirmation").addClass("active");
+        $("#polly-image").attr("src","img/polly.png");
+        $('#polly').removeClass("invisible");
         $(".ok").click(function(){
           $(".popup-confirmation, .popup-content-confirmation").removeClass("active");
         });

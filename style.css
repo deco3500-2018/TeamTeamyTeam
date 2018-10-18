@@ -259,8 +259,12 @@ input[type="question"] {
   padding-bottom: 0;
 }
 
+
 .invisible{
   visibility: hidden;
+  height: 0px;
+  width: 0px;
+  position: absolute;
 }
 
 .decline{
