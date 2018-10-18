@@ -59,14 +59,14 @@ body {
 }
 
 .general a{
-  color: rgb(86,157,190);
+  color: rgb(72, 129, 156);
   background-color: rgb(117,204,246);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
 
 .maths a{
-  color: rgb(110,154,96);
+  color: rgb(88, 122, 77);
   background-color:rgb(147,204,127);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -74,7 +74,7 @@ body {
 }
 
 .english a{
-  color: rgb(189, 118, 152);
+  color: rgb(148, 93, 119);
   background-color: rgb(236, 155, 194);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
