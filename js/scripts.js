@@ -4,7 +4,7 @@ $(document).ready(function()
 
 // Reviewing posts turn on
   //press 1 to post tiffany's
-  $(document).keypress(function(e) {
+  $(document).on('keypress', function(e) {
     if(e.which == 49) {
         $(".popup-post, .popup-content-post").addClass("active");
         $(".confirm").click(function(){
@@ -19,7 +19,6 @@ $(document).ready(function()
         $(".nevermind").click(function(){
           $(".popup-post, .popup-content-post").removeClass("active");
         });
-    };
     // accept tiffany's post
       $( "#accept-tiffany" ).click(function() {
         var image =   $(this).parent().prev(".img-post");
@@ -30,7 +29,7 @@ $(document).ready(function()
         $(this).prev(".decline").remove();
         $(this).remove();
         $( ".star-button-tiffany" ).click(function() {
-          $('.tiffany-likes').html(function(y, tif) { return tif*1+1 });
+          $('.tiffany-likes').html(function(i, val) { return val*1+1 });
         });
         $( ".cross-delete" ).click(function(){
           $(".popup, .popup-content").addClass("active");
@@ -42,7 +41,7 @@ $(document).ready(function()
           });
         });
       });
-
+    }
     //press 2 to post bryan's
     if(e.which == 50) {
       $(".popup-post, .popup-content-post").addClass("active");
@@ -58,7 +57,6 @@ $(document).ready(function()
       $(".nevermind").click(function(){
         $(".popup-post, .popup-content-post").removeClass("active");
       });
-    };
 
     // accept bryans post
       $( "#accept-bryan" ).click(function() {
@@ -70,7 +68,7 @@ $(document).ready(function()
         $(this).prev(".decline").remove();
         $(this).remove();
         $( ".star-button-bryan" ).click(function() {
-          $('.bryan-likes').html(function(a, bry) { return bry*1+1 });
+          $('.bryan-likes').html(function(i, val) { return val*1+1 });
         });
         $( ".cross-delete" ).click(function(){
           $(".popup, .popup-content").addClass("active");
@@ -82,6 +80,7 @@ $(document).ready(function()
           });
         });
       });
+    }
     //press 3 to post lucy's
     if(e.which == 51) {
       $(".popup-post, .popup-content-post").addClass("active");
@@ -97,7 +96,6 @@ $(document).ready(function()
       $(".nevermind").click(function(){
         $(".popup-post, .popup-content-post").removeClass("active");
       });
-    };
     // accept lucy's post
       $( "#accept-lucy" ).click(function() {
         var image =   $(this).parent().prev(".img-post");
@@ -120,6 +118,7 @@ $(document).ready(function()
           });
         });
       });
+    }
 
     //press 4 to post oliver's
     if(e.which == 52) {
@@ -136,7 +135,6 @@ $(document).ready(function()
       $(".nevermind").click(function(){
         $(".popup-post, .popup-content-post").removeClass("active");
       });
-    };
     // accept olivers post
       $( "#accept-oliver" ).click(function() {
         var image =   $(this).parent().prev(".img-post");
@@ -147,7 +145,7 @@ $(document).ready(function()
         $(this).prev(".decline").remove();
         $(this).remove();
         $( ".star-button-oliver" ).click(function() {
-          $('.oliver-likes').html(function(x, num) { return num*1+1 });
+          $('.oliver-likes').html(function(i, val) { return val*1+1 });
         });
         $( ".cross-delete" ).click(function(){
           $(".popup, .popup-content").addClass("active");
@@ -159,7 +157,7 @@ $(document).ready(function()
           });
         });
       });
-
+    }
     //press 5 to post polly's
     if(e.which == 53) {
       $(".popup-post, .popup-content-post").addClass("active");
@@ -175,7 +173,6 @@ $(document).ready(function()
       $(".nevermind").click(function(){
         $(".popup-post, .popup-content-post").removeClass("active");
       });
-    };
     // accept pollys post
       $( "#accept-polly" ).click(function() {
         var image =   $(this).parent().prev(".img-post");
@@ -186,7 +183,7 @@ $(document).ready(function()
         $(this).prev(".decline").remove();
         $(this).remove();
         $( ".star-button-polly" ).click(function() {
-          $('.polly-likes').html(function(p, pol) { return pol*1+1 });
+          $('.polly-likes').html(function(i, val) { return val*1+1 });
         });
         $( ".cross-delete" ).click(function(){
           $(".popup, .popup-content").addClass("active");
@@ -198,6 +195,7 @@ $(document).ready(function()
           });
         });
       });
+    }
 });
 
 
@@ -224,9 +222,6 @@ $(document).ready(function()
     });
 
   });
-
-
-
 
 
   $(".submit").click(function(){
