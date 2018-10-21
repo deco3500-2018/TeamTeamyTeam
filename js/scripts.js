@@ -27,7 +27,7 @@ $(document).ready(function()
         });
         $( "#column3" ).find('.cross-delete').replaceWith('');
         $(this).prev(".decline").remove();
-        $(this).remove();
+        $("#accept-tiffany").remove();
         $( ".star-button-tiffany" ).click(function() {
           $('.tiffany-likes').html(function(i, val) { return val*1+1 });
         });
@@ -66,7 +66,7 @@ $(document).ready(function()
         });
         $( "#column3" ).find('.cross-delete').replaceWith('');
         $(this).prev(".decline").remove();
-        $(this).remove();
+        $("#accept-bryan").remove();
         $( ".star-button-bryan" ).click(function() {
           $('.bryan-likes').html(function(i, val) { return val*1+1 });
         });
@@ -104,7 +104,7 @@ $(document).ready(function()
         });
         $( "#column3" ).find('.cross-delete').replaceWith('');
         $(this).prev(".decline").remove();
-        $(this).remove();
+        $("#accept-lucy").remove();
         $( ".star-button-lucy" ).click(function() {
           $('.lucy-likes').html(function(i, val) { return val*1+1 });
         });
@@ -143,7 +143,7 @@ $(document).ready(function()
         });
         $( "#column3" ).find('.cross-delete').replaceWith('');
         $(this).prev(".decline").remove();
-        $(this).remove();
+        $("#accept-oliver").remove();
         $( ".star-button-oliver" ).click(function() {
           $('.oliver-likes').html(function(i, val) { return val*1+1 });
         });
@@ -181,7 +181,7 @@ $(document).ready(function()
         });
         $( "#column3" ).find('.cross-delete').replaceWith('');
         $(this).prev(".decline").remove();
-        $(this).remove();
+        $("#accept-polly").remove();
         $( ".star-button-polly" ).click(function() {
           $('.polly-likes').html(function(i, val) { return val*1+1 });
         });
@@ -202,7 +202,7 @@ $(document).ready(function()
 
   $( ".decline" ).click(function() {
     var image = $(this).parent().prev(".img-post");
-    var accept = $(this).next("#accept");
+    var accept = $(this).next(".accept");
     var decline = $(this);
     $(".popup, .popup-content").addClass("active");
     $(".delete").click(function(){
