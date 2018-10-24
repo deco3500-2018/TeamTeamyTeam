@@ -28,6 +28,7 @@ $(document).ready(function()
           $(".decline-tiffany").remove();
           $("#accept-tiffany").remove();
           $( ".star-button-tiffany" ).click(function() {
+            $('audio#pop')[0].play();
             $('.tiffany-likes').html(function(i, val) { return val*1+1 });
           });
         });
@@ -41,6 +42,7 @@ $(document).ready(function()
         $(this).prev(".decline-tiffany").remove();
         $("#accept-tiffany").remove();
         $( ".star-button-tiffany" ).click(function() {
+          $('audio#pop')[0].play();
           $('.tiffany-likes').html(function(i, val) { return val*1+1 });
         });
         $( ".cross-tiffany" ).click(function(){
@@ -78,6 +80,7 @@ $(document).ready(function()
         $(".decline-bryan").remove();
         $("#accept-bryan").remove();
         $( ".star-button-bryan" ).click(function() {
+          $('audio#pop')[0].play();
           $('.bryan-likes').html(function(i, val) { return val*1+1 });
         });
       });
@@ -92,6 +95,7 @@ $(document).ready(function()
         $(this).prev(".decline-bryan").remove();
         $("#accept-bryan").remove();
         $( ".star-button-bryan" ).click(function() {
+          $('audio#pop')[0].play();
           $('.bryan-likes').html(function(i, val) { return val*1+1 });
         });
         $( ".cross-delete" ).click(function(){
@@ -129,6 +133,7 @@ $(document).ready(function()
         $(".decline-lucy").remove();
         $("#accept-lucy").remove();
         $( ".star-button-lucy" ).click(function() {
+          $('audio#pop')[0].play();
           $('.lucy-likes').html(function(i, val) { return val*1+1 });
         });
       });
@@ -142,6 +147,7 @@ $(document).ready(function()
         $(this).prev(".decline-lucy").remove();
         $("#accept-lucy").remove();
         $( ".star-button-lucy" ).click(function() {
+          $('audio#pop')[0].play();
           $('.lucy-likes').html(function(i, val) { return val*1+1 });
         });
         $( ".cross-delete" ).click(function(){
@@ -180,6 +186,7 @@ $(document).ready(function()
         $(".decline-oliver").remove();
         $("#accept-oliver").remove();
         $( ".star-button-oliver" ).click(function() {
+          $('audio#pop')[0].play();
           $('.oliver-likes').html(function(i, val) { return val*1+1 });
         });
       });
@@ -193,6 +200,7 @@ $(document).ready(function()
         $(this).prev(".decline-oliver").remove();
         $("#accept-oliver").remove();
         $( ".star-button-oliver" ).click(function() {
+          $('audio#pop')[0].play();
           $('.oliver-likes').html(function(i, val) { return val*1+1 });
         });
         $( ".cross-delete" ).click(function(){
@@ -230,6 +238,7 @@ $(document).ready(function()
         $(".decline-polly").remove();
         $("#accept-polly").remove();
         $( ".star-button-polly" ).click(function() {
+          $('audio#pop')[0].play();
           $('.polly-likes').html(function(i, val) { return val*1+1 });
         });
 
@@ -245,6 +254,7 @@ $(document).ready(function()
         $(this).prev(".decline-polly").remove();
         $("#accept-polly").remove();
         $( ".star-button-polly" ).click(function() {
+          $('audio#pop')[0].play();
           $('.polly-likes').html(function(i, val) { return val*1+1 });
         });
 
