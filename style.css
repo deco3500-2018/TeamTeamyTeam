@@ -208,6 +208,7 @@ body {
   height: 20px;
   border-radius: 5px;
   letter-spacing: 0.5px;
+  padding-left: 25px;
 }
 
 .column-heading-input{
@@ -277,7 +278,7 @@ input[type="question"] {
   position: absolute;
 }
 
-.decline{
+#decline{
   display: inline-block;
   width: 70px;
   height: 45px;
@@ -356,13 +357,21 @@ input[type="question"] {
   font-weight: 400;
   font-size: 18pt;
   display: inline-block;
-  bottom: 90px;
+  bottom: 80px;
   right: 60px;
   color: rgb(88, 90, 93);
-
 }
 
-
+.cross-delete-2{
+  cursor: pointer;
+  position: relative;
+  font-weight: 400;
+  font-size: 18pt;
+  display: inline-block;
+  bottom: 80px;
+  right: 60px;
+  color: rgb(88, 90, 93);
+}
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
@@ -521,6 +530,8 @@ input[type="text"] {
 .settings-table td{
   text-align: center;
 }
+
+
 
 /* The switch - the box around the slider */
 .switch {

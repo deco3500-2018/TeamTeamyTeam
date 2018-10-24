@@ -19,25 +19,38 @@ $(document).ready(function()
         $(".nevermind").click(function(){
           $(".popup-post, .popup-content-post").removeClass("active");
         });
+
+        $(".slider").one("click", function(){
+          $("#tif-image").appendTo('#column2, #column3').after(function(){
+            return "<div class='cross-delete-2'>x</div><div class='star-button-tiffany' id='counter'><div class='star'><div class='material-icons star'>star</div></div><div class='tiffany-likes' id='likes'>0</div></div>";
+          });
+          $( "#column3" ).find('.cross-delete-2').replaceWith('');
+          $(".decline-tiffany").remove();
+          $("#accept-tiffany").remove();
+          $( ".star-button-tiffany" ).click(function() {
+            $('.tiffany-likes').html(function(i, val) { return val*1+1 });
+          });
+        });
     // accept tiffany's post
       $( "#accept-tiffany" ).click(function() {
         var image =   $(this).parent().prev(".img-post");
         $(image).appendTo('#column2, #column3').after(function(){
-          return "<div class='cross-delete'>x</div><div class='star-button-tiffany' id='counter'><div class='star'><div class='material-icons star'>star</div></div><div class='tiffany-likes' id='likes'>0</div></div>";
+          return "<div class= 'cross-delete'>x</div><div class='star-button-tiffany' id='counter'><div class='star'><div class='material-icons star'>star</div></div><div class='tiffany-likes' id='likes'>0</div></div>";
         });
         $( "#column3" ).find('.cross-delete').replaceWith('');
-        $(this).prev(".decline").remove();
+        $(this).prev(".decline-tiffany").remove();
         $("#accept-tiffany").remove();
         $( ".star-button-tiffany" ).click(function() {
           $('.tiffany-likes').html(function(i, val) { return val*1+1 });
         });
-        $( ".cross-delete" ).click(function(){
+        $( ".cross-tiffany" ).click(function(){
           $(".popup, .popup-content").addClass("active");
           $(".delete").click(function(){
             $(".popup, .popup-content").removeClass("active");
           });
           $(".cancel").click(function(){
             $(".popup, .popup-content").removeClass("active");
+            $()
           });
         });
       });
@@ -57,6 +70,17 @@ $(document).ready(function()
       $(".nevermind").click(function(){
         $(".popup-post, .popup-content-post").removeClass("active");
       });
+      $(".slider").one("click", function(){
+        $("#bryan-image").appendTo('#column2, #column3').after(function(){
+          return "<div class='cross-delete-2'>x</div><div class='star-button-bryan' id='counter'><div class='star'><div class='material-icons star'>star</div></div><div class='bryan-likes' id='likes'>0</div></div>";
+        });
+        $( "#column3" ).find('.cross-delete-2').replaceWith('');
+        $(".decline-bryan").remove();
+        $("#accept-bryan").remove();
+        $( ".star-button-bryan" ).click(function() {
+          $('.bryan-likes').html(function(i, val) { return val*1+1 });
+        });
+      });
 
     // accept bryans post
       $( "#accept-bryan" ).click(function() {
@@ -65,7 +89,7 @@ $(document).ready(function()
           return "<div class='cross-delete'>x</div><div class='star-button-bryan' id='counter'><div class='star'><div class='material-icons star'>star</div></div><div class='bryan-likes' id='likes'>0</div></div>";
         });
         $( "#column3" ).find('.cross-delete').replaceWith('');
-        $(this).prev(".decline").remove();
+        $(this).prev(".decline-bryan").remove();
         $("#accept-bryan").remove();
         $( ".star-button-bryan" ).click(function() {
           $('.bryan-likes').html(function(i, val) { return val*1+1 });
@@ -96,6 +120,18 @@ $(document).ready(function()
       $(".nevermind").click(function(){
         $(".popup-post, .popup-content-post").removeClass("active");
       });
+
+      $(".slider").one("click", function(){
+        $("#lucy-image").appendTo('#column2, #column3').after(function(){
+          return "<div class='cross-delete-2'>x</div><div class='star-button-lucy' id='counter'><div class='star'><div class='material-icons star'>star</div></div><div class='lucy-likes' id='likes'>0</div></div>";
+        });
+        $( "#column3" ).find('.cross-delete-2').replaceWith('');
+        $(".decline-lucy").remove();
+        $("#accept-lucy").remove();
+        $( ".star-button-lucy" ).click(function() {
+          $('.lucy-likes').html(function(i, val) { return val*1+1 });
+        });
+      });
     // accept lucy's post
       $( "#accept-lucy" ).click(function() {
         var image =   $(this).parent().prev(".img-post");
@@ -103,7 +139,7 @@ $(document).ready(function()
           return "<div class='cross-delete'>x</div><div class='star-button-lucy' id='counter'><div class='star'><div class='material-icons star'>star</div></div><div class='lucy-likes' id='likes'>0</div></div>";
         });
         $( "#column3" ).find('.cross-delete').replaceWith('');
-        $(this).prev(".decline").remove();
+        $(this).prev(".decline-lucy").remove();
         $("#accept-lucy").remove();
         $( ".star-button-lucy" ).click(function() {
           $('.lucy-likes').html(function(i, val) { return val*1+1 });
@@ -135,6 +171,18 @@ $(document).ready(function()
       $(".nevermind").click(function(){
         $(".popup-post, .popup-content-post").removeClass("active");
       });
+
+      $(".slider").one("click", function(){
+        $("#oliver-image").appendTo('#column2, #column3').after(function(){
+          return "<div class='cross-delete-2'>x</div><div class='star-button-oliver' id='counter'><div class='star'><div class='material-icons star'>star</div></div><div class='oliver-likes' id='likes'>0</div></div>";
+        });
+        $( "#column3" ).find('.cross-delete-2').replaceWith('');
+        $(".decline-oliver").remove();
+        $("#accept-oliver").remove();
+        $( ".star-button-oliver" ).click(function() {
+          $('.oliver-likes').html(function(i, val) { return val*1+1 });
+        });
+      });
     // accept olivers post
       $( "#accept-oliver" ).click(function() {
         var image =   $(this).parent().prev(".img-post");
@@ -142,7 +190,7 @@ $(document).ready(function()
           return "<div class='cross-delete'>x</div><div class='star-button-oliver' id='counter'><div class='star'><div class='material-icons star'>star</div></div><div class='oliver-likes' id='likes'>0</div></div>";
         });
         $( "#column3" ).find('.cross-delete').replaceWith('');
-        $(this).prev(".decline").remove();
+        $(this).prev(".decline-oliver").remove();
         $("#accept-oliver").remove();
         $( ".star-button-oliver" ).click(function() {
           $('.oliver-likes').html(function(i, val) { return val*1+1 });
@@ -173,6 +221,20 @@ $(document).ready(function()
       $(".nevermind").click(function(){
         $(".popup-post, .popup-content-post").removeClass("active");
       });
+
+      $(".slider").one("click", function(){
+        $("#polly-image").appendTo('#column2, #column3').after(function(){
+          return "<div class='cross-delete-2'>x</div><div class='star-button-polly' id='counter'><div class='star'><div class='material-icons star'>star</div></div><div class='polly-likes' id='likes'>0</div></div>";
+        });
+        $( "#column3" ).find('.cross-delete-2').replaceWith('');
+        $(".decline-polly").remove();
+        $("#accept-polly").remove();
+        $( ".star-button-polly" ).click(function() {
+          $('.polly-likes').html(function(i, val) { return val*1+1 });
+        });
+
+
+      });
     // accept pollys post
       $( "#accept-polly" ).click(function() {
         var image =   $(this).parent().prev(".img-post");
@@ -180,15 +242,18 @@ $(document).ready(function()
           return "<div class='cross-delete'>x</div><div class='star-button-polly' id='counter'><div class='star'><div class='material-icons star'>star</div></div><div class='polly-likes' id='likes'>0</div></div>";
         });
         $( "#column3" ).find('.cross-delete').replaceWith('');
-        $(this).prev(".decline").remove();
+        $(this).prev(".decline-polly").remove();
         $("#accept-polly").remove();
         $( ".star-button-polly" ).click(function() {
           $('.polly-likes').html(function(i, val) { return val*1+1 });
         });
+
+
         $( ".cross-delete" ).click(function(){
           $(".popup, .popup-content").addClass("active");
           $(".delete").click(function(){
             $(".popup, .popup-content").removeClass("active");
+
           });
           $(".cancel").click(function(){
             $(".popup, .popup-content").removeClass("active");
@@ -200,7 +265,7 @@ $(document).ready(function()
 
 
 
-  $( ".decline" ).click(function() {
+  $( "#decline" ).click(function() {
     var image = $(this).parent().prev(".img-post");
     var accept = $(this).next(".accept");
     var decline = $(this);
@@ -255,8 +320,6 @@ $(document).ready(function()
     if (scroll >= 100) sticky.addClass('fixed');
     else sticky.removeClass('fixed');
   });
-
-
 
 
 
