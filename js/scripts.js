@@ -275,7 +275,7 @@ $(document).ready(function()
 
 
 
-  $( "#decline" ).click(function() {
+  $( ".decline-tiffany" ).click(function() {
     var image = $(this).parent().prev(".img-post");
     var accept = $(this).next(".accept");
     var decline = $(this);
@@ -297,6 +297,91 @@ $(document).ready(function()
     });
 
   });
+  $( ".decline-lucy" ).click(function() {
+    var image = $(this).parent().prev(".img-post");
+    var accept = $(this).next(".accept");
+    var decline = $(this);
+    $(".popup, .popup-content").addClass("active");
+    $(".delete").click(function(){
+      $(".popup, .popup-content").removeClass("active");
+      $(image).fadeOut(400, function(){
+        $(this).remove();
+      });
+      $(decline).fadeOut(400, function(){
+        $(this).remove();
+      });
+      $(accept).fadeOut(400, function(){
+        $(this).remove();
+      });
+    });
+    $(".cancel").click(function(){
+      $(".popup, .popup-content").removeClass("active");
+    });
+
+  });  $( ".decline-bryan" ).click(function() {
+      var image = $(this).parent().prev(".img-post");
+      var accept = $(this).next(".accept");
+      var decline = $(this);
+      $(".popup, .popup-content").addClass("active");
+      $(".delete").click(function(){
+        $(".popup, .popup-content").removeClass("active");
+        $(image).fadeOut(400, function(){
+          $(this).remove();
+        });
+        $(decline).fadeOut(400, function(){
+          $(this).remove();
+        });
+        $(accept).fadeOut(400, function(){
+          $(this).remove();
+        });
+      });
+      $(".cancel").click(function(){
+        $(".popup, .popup-content").removeClass("active");
+      });
+
+    });  $( ".decline-polly" ).click(function() {
+        var image = $(this).parent().prev(".img-post");
+        var accept = $(this).next(".accept");
+        var decline = $(this);
+        $(".popup, .popup-content").addClass("active");
+        $(".delete").click(function(){
+          $(".popup, .popup-content").removeClass("active");
+          $(image).fadeOut(400, function(){
+            $(this).remove();
+          });
+          $(decline).fadeOut(400, function(){
+            $(this).remove();
+          });
+          $(accept).fadeOut(400, function(){
+            $(this).remove();
+          });
+        });
+        $(".cancel").click(function(){
+          $(".popup, .popup-content").removeClass("active");
+        });
+
+      });  $( ".decline-oliver" ).click(function() {
+          var image = $(this).parent().prev(".img-post");
+          var accept = $(this).next(".accept");
+          var decline = $(this);
+          $(".popup, .popup-content").addClass("active");
+          $(".delete").click(function(){
+            $(".popup, .popup-content").removeClass("active");
+            $(image).fadeOut(400, function(){
+              $(this).remove();
+            });
+            $(decline).fadeOut(400, function(){
+              $(this).remove();
+            });
+            $(accept).fadeOut(400, function(){
+              $(this).remove();
+            });
+          });
+          $(".cancel").click(function(){
+            $(".popup, .popup-content").removeClass("active");
+          });
+
+        });
 
 
   $(".submit").click(function(){
