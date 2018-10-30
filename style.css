@@ -3,9 +3,7 @@ body {
   padding: 0;
   background: rgb(235, 235, 235);
   font-family: helvetica, sans-serif;
-
 }
-
 
 .logos{
   position: relative;
@@ -375,7 +373,7 @@ input[type="question"] {
   color: rgb(88, 90, 93);
 }
 
-/* The sticky class is added to the header with JS when it reaches its scroll position */
+/* fixed header on scroll. code adpated from https://www.w3schools.com/howto/howto_js_sticky_header.asp */
 .sticky {
   position: fixed;
   top: 0;
@@ -383,10 +381,11 @@ input[type="question"] {
   z-index: 80;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
   padding-top: 90px;
 }
+/* end code adaptation for fixed header */
+
 /* ALL THE POP-UPS */
 
 /* popup for posting styling */
@@ -535,7 +534,7 @@ input[type="text"] {
 
 
 
-/* The switch - the box around the slider */
+/* The switch - the box around the slider. code adapted from https://www.w3schools.com/howto/howto_css_switch.asp */
 .switch {
   position: relative;
   display: inline-block;
@@ -595,3 +594,5 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/* end of code adaption for toggle switch */
